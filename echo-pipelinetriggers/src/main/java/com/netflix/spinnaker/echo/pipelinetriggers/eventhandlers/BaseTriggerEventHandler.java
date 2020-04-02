@@ -45,7 +45,7 @@ public abstract class BaseTriggerEventHandler<T extends TriggerEvent>
   private final Registry registry;
   protected final ObjectMapper objectMapper;
 
-  BaseTriggerEventHandler(Registry registry, ObjectMapper objectMapper) {
+  public BaseTriggerEventHandler(Registry registry, ObjectMapper objectMapper) {
     this.registry = registry;
     this.objectMapper = objectMapper;
   }
