@@ -18,6 +18,7 @@ package com.netflix.spinnaker.echo.pipelinetriggers.orca;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.netflix.spinnaker.echo.model.Pipeline;
+import com.netflix.spinnaker.echo.model.Trigger;
 import com.netflix.spinnaker.security.AuthenticatedRequest;
 import java.util.Collection;
 import java.util.Map;
@@ -73,5 +74,6 @@ public interface OrcaService {
     private String pipelineConfigId;
     private Long startTime;
     private OrcaExecutionStatus status;
+    private Trigger trigger;
   }
 }
